@@ -3,6 +3,7 @@ import GeneralInfo from './GeneralInfo'
 import Education from './Education'
 import Experience from './Experience'
 import Title from './Title'
+import Salary from './Salary'
 
 function CV(props) {
   const store = props.store;
@@ -16,6 +17,8 @@ function CV(props) {
       <GeneralInfo info={store.generalInfo}></GeneralInfo>
       <Education info={store.education}></Education>
       <Experience info={store.experience}></Experience>
+      <Salary info={store.salary}></Salary>
+
     </>
   )
 }

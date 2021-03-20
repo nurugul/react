@@ -3,7 +3,8 @@ import GeneralInfo from './components/GeneralInfo';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Title from './components/Title';
-import './styles.scss'
+import CV from './components/CV';
+import Salary from './components/Salary'
 
 
 
@@ -44,10 +45,18 @@ function App() {
         skills: ['html', 'css', 'js'],
       },
     },
+    salary: {
+      title: 'salary',
+      items: {
+        monthly: 1200,
+        
+      },
+    },
   };
 
   return (
     <CV store = {store}></CV>
+    
   )
 }
 export default App

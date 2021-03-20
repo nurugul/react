@@ -6,6 +6,8 @@ function GeneralInfo(props) {
    let now = new Date()
    const age =now.getFullYear() - +items.birthYear
 
+  //  const salary = monthly.items * hourly.items
+
   return (
     <section>
       <h2>{title}</h2>
@@ -13,7 +15,6 @@ function GeneralInfo(props) {
       <p>Date of birth: {items.birthYear}</p>
       <p>Vozrast: {age}</p>
       <p>Desired Position: {items.position}</p>
-
     </section>
   )
 }
